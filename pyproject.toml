@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "appsec-project"
+version = "0.1.0"
+description = ""
+authors = ["timofey282228 <tymopod-ipt25@lll.kpi.ua>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+scipy = "^1.13.0"
+pydantic = "^2.7.1"
+
+
+[tool.poetry.scripts]
+appsec-project = "appsec_project.__main__:main"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+pylint = "^3.1.0"
+mypy = "^1.10.0"
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
